@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="text-white text-center d-flex align-items-center" 
+style="height:500px; background:url('{{ url_for('static', filename='image/ngo.jpg') }}') center/cover no-repeat;">
+
+<div class="container">
+<h1 class="display-4 fw-bold">Together We Can Change Lives</h1>
+<p class="lead">Hope Foundation supports education, healthcare and social welfare.</p>
+<a href="/donate" class="btn btn-danger btn-lg mt-3">Donate Now</a>
+</div>
+
+</section>
+
+
+<!-- ABOUT NGO -->
+<section class="py-5">
+<div class="container text-center">
+
+<h2 class="mb-4">Our Mission</h2>
+
+<p class="lead">
+We aim to uplift underprivileged communities by providing education, healthcare,
+food support and opportunities for a better future.
+</p>
+
+</div>
+</section>
+
+
+<!-- IMPACT SECTION -->
+<section class="bg-light py-5">
+<div class="container text-center">
+
+<h2 class="mb-5">Our Impact</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+<h1 class="text-primary">500+</h1>
+<p>Children Educated</p>
+</div>
+
+<div class="col-md-3">
+<h1 class="text-primary">200+</h1>
+<p>Families Supported</p>
+</div>
+
+<div class="col-md-3">
+<h1 class="text-primary">50+</h1>
+<p>Volunteers</p>
+</div>
+
+<div class="col-md-3">
+<h1 class="text-primary">30+</h1>
+<p>Projects Completed</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- OUR WORK -->
+
+<div class="container mt-5">
+
+<h2>Add Blog Post</h2>
+
+<form method="POST">
+
+<div class="mb-3">
+<label>Title</label>
+<input type="text" name="title" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Content</label>
+<textarea name="content" class="form-control" rows="5" required></textarea>
+</div>
+
+<button class="btn btn-primary">Publish</button>
+
+</form>
+
+</div>
+
+
+<!-- DONATION SECTION -->
+<section class="bg-danger text-white text-center py-5">
+
+<div class="container">
+
+<h2>Be the Reason Someone Smiles Today</h2>
+<p>Your small contribution can create a big impact.</p>
+
+<a href="/donate" class="btn btn-light btn-lg mt-3">Donate Now</a>
+
+</div>
+
+</section>
+
+
+{% endblock %}

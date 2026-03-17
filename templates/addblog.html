@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+<h2>Add Blog Post</h2>
+
+<form method="POST">
+
+<div class="mb-3">
+<label>Title</label>
+<input type="text" name="title" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label>Content</label>
+<textarea name="content" class="form-control" rows="5" required></textarea>
+</div>
+
+<button class="btn btn-primary">Publish</button>
+
+</form>
+
+</div>
+
+{% endblock %}
